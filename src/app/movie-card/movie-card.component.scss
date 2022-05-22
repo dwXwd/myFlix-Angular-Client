@@ -1,0 +1,80 @@
+$backgroundColor: #d7d9d8;
+$cardColor: #5cc440;
+$textColor: #003D66;
+$boxShadowColor: #256c35;
+$buttonColor: #001F33;
+
+.movie-view {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 50px 0;
+    background-color: $backgroundColor;
+}
+
+.mat-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    box-shadow: 10px 5px 5px $boxShadowColor;
+    background-color: $cardColor;
+    max-width: 280px;
+    width: 280px;
+    margin: 15px;
+    padding: 20px 3px;
+}
+
+.mat-card-header {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    color: $textColor;
+}
+
+.movies-title {
+    display: flex;
+    max-width: 210px;
+    justify-content: center;
+    text-align: center;
+    line-height: normal;
+}
+
+.mat-card-subtitle {
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: $textColor;
+}
+
+.director-button {
+    padding: 5px;
+    margin: 0;
+    line-height: 0;
+    max-height: 20px;
+}
+
+img {
+    width: 250px;
+    height: 350px;
+    object-fit: contain;
+}
+
+.mat-icon-button {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+}
+
+.genre-button {
+    background-color: $buttonColor;
+    color: $backgroundColor;
+}
+
+.synopsis-button {
+    background-color: $buttonColor;
+    color: $backgroundColor;
+}

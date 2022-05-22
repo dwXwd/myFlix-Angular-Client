@@ -1,0 +1,45 @@
+$backgroundColor: #d7d9d8;
+$cardColor: #5cc440;
+$textColor: #003D66;
+$boxShadowColor: #256c35;
+$buttonColor: #001F33;
+
+.synopsis-card {
+    background-color: $cardColor;
+    margin-top: 0px;
+    box-shadow: none;
+}
+
+.synopsis-card-title {
+    color: $textColor;
+}
+
+.synopsis-card-img {
+    float: left;
+    margin-right: 20px;
+}
+
+.synopsis-card-content {
+    color: $textColor;
+}
+
+::ng-deep .synopsis-custom > mat-dialog-container {
+    background-color: $cardColor;
+}
+
+img {
+    border-radius: 5px;
+}
+
+.synopsis-close-button.mat-stroked-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0px;
+    line-height: 14px;
+    min-width: auto;
+    border: none;
+    color: $textColor;
+    background-color: transparent;
+    font-size: 20px;
+}

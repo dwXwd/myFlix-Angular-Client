@@ -1,0 +1,142 @@
+$backgroundColor: #d7d9d8;
+$cardColor: #5cc440;
+$textColor: #003D66;
+$boxShadowColor: #256c35;
+$buttonColor: #001F33;
+
+.delete-fav-button {
+    color: $textColor;
+}
+
+img {
+    border-radius: 5px;
+    height: 350px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.user-profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 40px;
+    background-color: $backgroundColor;
+}
+
+.user-profile-info {
+    color: $textColor;
+}
+
+.user-profile-card {
+    margin-top: 50px;
+    display: flex;
+    padding: 30px;
+    width: 400px;
+    flex-direction: column;
+    box-shadow: 10px 5px 5px $boxShadowColor;
+    background-color: $cardColor;
+}
+
+.user-profile-card > mat-card-header {
+    display: flex;
+    justify-content: center;
+}
+
+.user-profile-header {
+    margin-bottom: 20px;
+    color: $textColor;
+}
+
+.mat-card>.mat-card-actions:last-child {
+    margin-bottom: -8px;
+    padding-bottom: 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.edit-profile-button {
+    background-color: $buttonColor;
+    color: $backgroundColor;
+}
+
+.delete-profile-button {
+    background-color: #CE2A38;
+    color: $backgroundColor;
+    margin: 0 !important;
+}
+
+.favorite-movies-header {
+    color: $textColor;
+    margin-top: 25px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+.favorite-movies-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.favorite-movies {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: $cardColor;
+    box-shadow: 10px 5px 5px $boxShadowColor;
+    max-width: 280px;
+    width: 280px;
+    margin: 15px;
+    padding: 20px 3px;
+}
+
+.favorite-movies-title-header {
+    display: flex;
+    align-items: center;
+    height: 80px;
+    color: $textColor;
+}
+
+.favorite-movies-title {
+    display: flex;
+    max-width: 210px;
+    justify-content: center;
+    text-align: center;
+    line-height: normal;
+    color: $textColor;
+}
+
+.mat-card-subtitle {
+    color: $textColor;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.director-button {
+    padding: 5px;
+    margin: 0;
+    line-height: 0;
+    max-height: 20px;
+}
+
+.mat-icon-button {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+}
+
+.genre-button {
+    background-color: $buttonColor;
+}
+
+.synopsis-button {
+    background-color: $buttonColor;
+}
