@@ -68,6 +68,7 @@ export class MovieCardComponent implements OnInit {
    * @param name {string}
    * @param description {string}
    */
+  
   openGenreDialog(name: string, description: string): void {
     this.dialog.open(GenreCardComponent, {
       data: {
@@ -120,7 +121,7 @@ export class MovieCardComponent implements OnInit {
    * @param Title {string}
    * @returns an array of the movie object in json format
    */
-  
+
   addToUserFavs(id: string, Title: string): void {
     console.log(id);
     const token = localStorage.getItem('token');
