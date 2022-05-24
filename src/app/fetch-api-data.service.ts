@@ -33,9 +33,8 @@ export class UserRegistrationService {
   public userLogin(userDetails: any): Observable<any> {
     console.log(userDetails);
     return this.http
-    .post(apiUrl + 'login', userDetails)
-    .pipe(catchError(this.handleError)
-    );
+      .post(apiUrl + 'login', userDetails)
+      .pipe(catchError(this.handleError));
   }
 
   // get all movies
