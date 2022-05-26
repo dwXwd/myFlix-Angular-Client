@@ -33,7 +33,21 @@ export class ProfileViewComponent implements OnInit {
     this.getFavoriteMovies();
   }
 
-
+  /**
+   * calls API end-piont to get the user's data
+   * @function getUserProfile
+   * @returns user's data in json format
+   */
+  getUserProfile(): void {
+    const username = localStorage.getItem('user');
+    if (username) {
+      this.fetchApiData.getUserProfile().subscribe((res: any) => {
+        this.user = res;
+        console.log(this.user);
+        return this.user;
+      });
+    }
+  }
 
   /**
    * opens the UserEditComponent for a user to change their personal data
